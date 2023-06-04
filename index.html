@@ -102,6 +102,99 @@
 
     // Start your code here
     // You may move this JS to another file if you wish
+    
+    // Console Log
+    errorBtns[0].addEventListener('click', () => {
+      console.log('This is a console log message.');
+    });
+
+    // Console Error
+    errorBtns[1].addEventListener('click', () => {
+      console.error('This is a console error message.');
+    });
+
+    // Console Count
+    let count = 0;
+    errorBtns[2].addEventListener('click', () => {
+      count++;
+      console.count('Count');
+    });
+
+    // Console Warn
+    errorBtns[3].addEventListener('click', () => {
+      console.warn('This is a console warning.');
+    });
+
+    // Console Assert
+    errorBtns[4].addEventListener('click', () => {
+      console.assert(false, 'Assertion failed: false');
+    });
+
+    // Console Clear
+    errorBtns[5].addEventListener('click', () => {
+      console.clear();
+    });
+
+    // Console Dir
+    errorBtns[6].addEventListener('click', () => {
+      console.dir(document.body);
+    });
+
+    // Console Dirxml
+    errorBtns[7].addEventListener('click', () => {
+      console.dirxml(document.body);
+    });
+
+    // Console Group Start
+    errorBtns[8].addEventListener('click', () => {
+      console.group('Group 1');
+      console.log('This is inside Group 1');
+    });
+
+    // Console Group End
+    errorBtns[9].addEventListener('click', () => {
+      console.groupEnd();
+    });
+
+    // Console Table
+    let tableData = [
+      { col1: 'I\'m', col2: 'with' },
+      { col1: 'so', col2: 'this' },
+      { col1: 'done', col2: 'class' }
+    ];
+    errorBtns[10].addEventListener('click', () => {
+      console.table(tableData);
+    });
+
+    // Start Timer
+    errorBtns[11].addEventListener('click', () => {
+      console.time('Timer');
+    });
+
+    // End Timer
+    errorBtns[12].addEventListener('click', () => {
+      console.timeEnd('Timer');
+    });
+
+    // Console Trace
+    errorBtns[13].addEventListener('click', () => {
+      console.trace();
+    });
+
+    // Trigger a Global Error
+    errorBtns[14].addEventListener('click', () => {
+      // You can trigger an error intentionally to test error handling
+      throw new Error('err caused when you clicked that button.');
+    });
+
+    // Code for Step 3 - Try/Catch and Error Handling
+    try {
+      // Code that may cause an error goes here
+      } catch (error) {
+        console.error('An error occurred:', error);
+      } finally {
+    }
+    
   </script>
 </body>
 
